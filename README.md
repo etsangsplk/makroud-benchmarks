@@ -1,5 +1,7 @@
 # Makroud benchmark
 
+> **NOTE:** A benchmark is always an observation, not a measurement of performance.
+
 ## Requirements
 
 At least **Go 1.11.0**.
