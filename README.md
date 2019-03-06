@@ -35,6 +35,25 @@ go test -run=XXX -bench=Delete -benchmem -benchtime=10s
 cd graph && python3 graph.py
 ```
 
+![SelectAll NsOp](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/select_all_nsop.png)
+![SelectAll Bop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/select_all_bop.png)
+![SelectAll Aop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/select_all_aop.png)
+![SelectSubset NsOp](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/select_subset_nsop.png)
+![SelectSubset Bop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/select_subset_bop.png)
+![SelectSubset Aop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/select_subset_aop.png)
+![SelectComplex NsOp](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/select_complex_nsop.png)
+![SelectComplex Bop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/select_complex_bop.png)
+![SelectComplex Aop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/select_complex_aop.png)
+![Insert NsOp](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/insert_nsop.png)
+![Insert Bop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/insert_bop.png)
+![Insert Aop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/insert_aop.png)
+![Update NsOp](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/update_nsop.png)
+![Update Bop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/update_bop.png)
+![Update Aop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/update_aop.png)
+![Delete NsOp](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/delete_nsop.png)
+![Delete Bop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/delete_bop.png)
+![Delete Aop](https://raw.githubusercontent.com/ulule/makroud-benchmarks/master/graph/images/delete_aop.png)
+
 ## Acknowledgement
 
 **SQLX** queries in this benchmark could be optimized.
