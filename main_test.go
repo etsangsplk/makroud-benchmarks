@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/go-xorm/core"
 	"github.com/ulule/makroud-benchmarks/mimic"
+	"xorm.io/xorm/dialects"
 )
 
 func jetExecSelect() mimic.QueryResult {
@@ -76,7 +76,7 @@ func jetExecDelete() mimic.QueryResult {
 
 func TestMain(m *testing.M) {
 	// Register the mimic driver for Xorm
-	core.RegisterDriver("mimic", &mimic.XormDriver{})
+	dialects.RegisterDriver("mimic", &mimic.XormDriver{})
 	code := m.Run()
 	os.Exit(code)
 }

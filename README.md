@@ -4,7 +4,7 @@
 
 ## Requirements
 
-At least **Go 1.11.0**.
+At least **Go 1.14.0**.
 
 ## Setup
 
@@ -18,7 +18,7 @@ go get -u -v "github.com/jmoiron/sqlx"
 ```
 
 > **NOTE:** This benchmark doesn't include **[SQLBoiler](https://github.com/volatiletech/sqlboiler)**
-and **[Kallax](https://github.com/src-d/go-kallax)** since they rely on code generation and not reflection.
+> and **[Kallax](https://github.com/src-d/go-kallax)** since they rely on code generation and not reflection.
 
 ## Execute
 
@@ -76,4 +76,4 @@ Go:     go version go1.11.2 linux/amd64
 
 ## Credits
 
-* [SQLBoiler Benchmark repository](https://github.com/volatiletech/boilbench)
+- [SQLBoiler Benchmark repository](https://github.com/volatiletech/boilbench)

@@ -7,10 +7,10 @@ import (
 	"testing"
 
 	"github.com/go-gorp/gorp"
-	"github.com/go-xorm/xorm"
 	"github.com/jinzhu/gorm"
 	"github.com/jmoiron/sqlx"
 	"github.com/ulule/loukoum/v3"
+	"xorm.io/xorm"
 
 	"github.com/ulule/makroud"
 	"github.com/ulule/makroud-benchmarks/mimic"

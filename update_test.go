@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/go-gorp/gorp"
-	"github.com/go-xorm/xorm"
 	"github.com/jinzhu/gorm"
 	"github.com/jmoiron/sqlx"
+	"xorm.io/xorm"
 
 	"github.com/ulule/makroud"
 	"github.com/ulule/makroud-benchmarks/mimic"
@@ -186,7 +186,7 @@ func BenchmarkXORM_Update(b *testing.B) {
 
 	b.Run("xorm", func(b *testing.B) {
 		for i := 0; i < b.N; i++ {
-			_, err := xormdb.Id(row.ID).Update(&row)
+			_, err := xormdb.ID(row.ID).Update(&row)
 			if err != nil {
 				b.Fatal(err)
 			}

@@ -8,7 +8,8 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/go-xorm/core"
+	"xorm.io/xorm/dialects"
+	"xorm.io/xorm/schemas"
 )
 
 // Forked from https://github.com/volatiletech/boilbench
@@ -156,6 +157,6 @@ func NewQueryDSN(dsn string, q QueryResult) {
 type XormDriver struct {
 }
 
-func (x *XormDriver) Parse(a string, b string) (*core.Uri, error) {
-	return &core.Uri{DbType: core.POSTGRES}, nil
+func (x *XormDriver) Parse(a string, b string) (*dialects.URI, error) {
+	return &dialects.URI{DBType: schemas.POSTGRES}, nil
 }
