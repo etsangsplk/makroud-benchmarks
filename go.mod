@@ -8,7 +8,7 @@ require (
 	github.com/jmoiron/sqlx v1.2.1-0.20200324155115-ee514944af4b
 	github.com/poy/onpar v0.0.0-20190519213022-ee068f8ea4d1 // indirect
 	github.com/ulule/loukoum/v3 v3.4.0
-	github.com/ulule/makroud v0.7.2-0.20200611143222-4cfca2143618
+	github.com/ulule/makroud v0.7.2-0.20200629074844-89fd4619ddc7
 	google.golang.org/appengine v1.6.5 // indirect
 	gopkg.in/yaml.v2 v2.2.4 // indirect
 	xorm.io/xorm v1.0.1

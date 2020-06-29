@@ -20,7 +20,12 @@ func BenchmarkMakroud_SelectAll(b *testing.B) {
 	exec := jetExecSelect()
 	dsn := mimic.NewQuery(exec)
 
-	driver, err := makroud.NewDebugClient("mimic", dsn)
+	node, err := makroud.Connect("mimic", dsn)
+	if err != nil {
+		b.Fatal(err)
+	}
+
+	driver, err := makroud.New(makroud.WithNode(node))
 	if err != nil {
 		b.Fatal(err)
 	}
@@ -143,7 +148,12 @@ func BenchmarkMakroud_SelectSubset(b *testing.B) {
 	exec := jetExecSelect()
 	dsn := mimic.NewQuery(exec)
 
-	driver, err := makroud.NewDebugClient("mimic", dsn)
+	node, err := makroud.Connect("mimic", dsn)
+	if err != nil {
+		b.Fatal(err)
+	}
+
+	driver, err := makroud.New(makroud.WithNode(node))
 	if err != nil {
 		b.Fatal(err)
 	}
@@ -267,7 +277,12 @@ func BenchmarkMakroud_SelectComplex(b *testing.B) {
 	exec.NumInput = -1
 	dsn := mimic.NewQuery(exec)
 
-	driver, err := makroud.NewDebugClient("mimic", dsn)
+	node, err := makroud.Connect("mimic", dsn)
+	if err != nil {
+		b.Fatal(err)
+	}
+
+	driver, err := makroud.New(makroud.WithNode(node))
 	if err != nil {
 		b.Fatal(err)
 	}

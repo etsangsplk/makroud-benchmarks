@@ -31,7 +31,12 @@ func BenchmarkMakroud_Delete(b *testing.B) {
 	exec.NumInput = -1
 	dsn := mimic.NewResult(exec)
 
-	driver, err := makroud.NewDebugClient("mimic", dsn)
+	node, err := makroud.Connect("mimic", dsn)
+	if err != nil {
+		b.Fatal(err)
+	}
+
+	driver, err := makroud.New(makroud.WithNode(node))
 	if err != nil {
 		b.Fatal(err)
 	}
